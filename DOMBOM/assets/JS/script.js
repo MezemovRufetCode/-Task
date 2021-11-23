@@ -1,16 +1,16 @@
-let inputName = document.querySelector("input[type=text]");
+let inputName = document.querySelector(".name");
 let errorName = document.querySelector(".errornameMsg");
 
-let inputSurname = document.querySelector("input[type=text]");
+let inputSurname = document.querySelector(".surname");
 let errorsName = document.querySelector(".errorsnameMsg");
 
 let inputEmail = document.querySelector("input[type=email]");
 let errorEm = document.querySelector(".erroremailMsg");
 
-let inputpsw = document.querySelector("input[type=password]");
+let inputpsw = document.querySelector(".psw");
 let errorPsw1 = document.querySelector(".errorPswMsg");
 
-let inputpsw2 = document.querySelector("input[type=password]");
+let inputpsw2 = document.querySelector(".cpsw");
 let errorPsw2 = document.querySelector(".errorPsw2Msg");
 
 let btn = document.querySelector(".MyBtn");
@@ -42,7 +42,7 @@ btn.onclick = function () {
   if (inputpsw.value == "") {
     errorPsw1.classList.remove("d-none");
   } else {
-    errorPsw2.classList.add("d-none");
+    errorPsw1.classList.add("d-none");
   }
 
   if (inputpsw2.value == "") {
